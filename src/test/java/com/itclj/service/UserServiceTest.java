@@ -22,7 +22,8 @@ public class UserServiceTest {
 
   @Test
   public void getUser() {
-    String result = userService.getUser(1222);
+    //id 444 retry
+    String result = userService.getUser(444);
     logger.info(result);
   }
 

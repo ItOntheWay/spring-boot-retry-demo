@@ -1,6 +1,7 @@
 package com.itclj.controller;
 
 import com.itclj.service.UserService;
+import com.itclj.service.impl.UserServiceImpl;
 import javax.annotation.Resource;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
 
   @Resource
-  private UserService userService;
+  private UserServiceImpl userService;
 
   @RequestMapping(value = "/{id}", method = RequestMethod.GET)
   public String getUser(@PathVariable Integer id) {
