@@ -8,6 +8,10 @@ spring-retry项目地址：https://github.com/spring-projects/spring-retry
 
 启用retry需要在启动类添加`@EnableRetry`注解。
 
+@Retryable不能用于接口的实现
+
+@Recover返回参数必须和监控的@Retryable一样
+
 @Retryable参数说明：
 
 ```$xslt
